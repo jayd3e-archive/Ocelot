@@ -6,7 +6,7 @@
 <html>
     <head>
         <title>Title</title>
-        <link rel="stylesheet" type="text/css" href="/static/css/ocelot.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/ocelot.less" />
 
         <!-- JavaScript -->
         <script type="text/javascript" src="/static/js/jquery-1.6.2.min.js"></script>
