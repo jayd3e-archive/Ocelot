@@ -51,3 +51,7 @@ data
 *.buildpath
 *.pydevproject
 *.DS_Store
+
+# Ocelot Ignores #
+##############
+/env
