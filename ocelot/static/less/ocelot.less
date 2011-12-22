@@ -1,0 +1,178 @@
+/* Ocelot's Type Globals */
+@color_one: #FFFFFF;
+@color_two: #363530;
+@hover: #AA443C;
+@header_font: Franchise;
+@text_font: Arial;
+
+/* Ocelot's Format Globals */
+@header_height: 41px;
+
+@import "reset.less";
+@import "type.less";
+
+header#main_header {
+    height: @header_height;
+    width: 100%;
+    position: fixed;
+    background-color: @color_two;
+
+    #logo {
+        float: left;
+        display: block;
+        padding: 10px 5px;
+        margin: 0 10px;
+    }
+
+    #main_nav {
+        float: left;
+
+        ul {
+            li {
+                float: left;
+
+                a {
+                    display: block;
+                    padding: 15px 5px 14px 5px;
+                }
+            }
+
+            li.search {
+                padding: 8px 5px;
+
+                input {
+                    line-height: 16px;
+                    width: 225px;
+                }
+            }
+        }
+    }
+
+    #account_nav {
+        float: right;
+        margin: 0 10px;
+
+        ul {
+            li {
+                float: right;
+
+                img {
+                    padding-top: 10px;
+                }
+
+                a {
+                    display: block;
+                    padding: 15px 5px 14px 5px;
+                }
+            }
+        }
+    }
+}
+
+.body {
+    /* 
+    * Clearing the timeline causes a 2px top padding above the
+    * timeline in Google Chrome
+    */
+    clear: both;
+    padding-top: @header_height;
+    white-space: nowrap;
+}
+
+div.timeline {
+    background-image: url('/static/img/timeline_bg.png');
+    background-repeat: repeat-x;
+    background-position: 0 50%;
+    display: inline-block;
+    min-width: 100%;
+
+    .top {
+        ul {
+            height: 180px;
+            padding: 20px 10px;
+
+            li {
+                float: left;
+                margin: 0px 10px;
+                
+                .event {
+                    width: 240px;
+                    height: 180px;
+                    position: relative;
+                    white-space: normal;
+
+                    .arrow {
+                        width: 29px;
+                        height: 25px;
+                        background-image: url('/static/img/top_arrow.png');
+                        position: absolute;
+                        bottom: -24px;
+                        right: 25px;
+                        z-index: 1;
+                    }
+
+                    .content {
+                        width: 220px;
+                        padding: 10px 10px 40px 10px;
+                        border: 1px solid @color_two;
+                        border-radius: 5px;
+                        position: absolute;
+                        bottom: 0;
+
+                        .signature {
+                            position: absolute;
+                            bottom: 10px;
+                            right: 10px;
+                        }
+                    }
+                }   
+            }   
+        }
+    }
+
+    .bottom {
+        ul {
+            height: 180px;
+            padding: 20px 10px;
+            // Temp offset
+            margin-left: 50px;
+
+            li {
+                float: left;
+                margin: 0px 10px;
+
+                .event {
+                    width: 240px;
+                    height: 180px;
+                    position: relative;
+                    white-space: normal;
+
+                    .arrow {
+                        width: 27px;
+                        height: 24px;
+                        background-image: url('/static/img/bot_arrow.png');
+                        position: absolute;
+                        top: -23px;
+                        left: 25px;
+                        z-index: 1;
+                    }
+
+                    .content {
+                        width: 220px;
+                        padding: 10px 10px 40px 10px;
+                        border: 1px solid @color_two;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 0;
+
+                        .signature {
+                            position: absolute;
+                            bottom: 10px;
+                            right: 10px;
+                        }
+                    }
+                }   
+            }   
+        }
+    }
+}
