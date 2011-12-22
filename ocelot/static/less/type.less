@@ -1,17 +1,31 @@
+h1 {
+    font-family: @header_font;
+    font-size: 30px;
+}
+
+a {
+    font-family: @text_font;
+    font-size: 12px;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
 header#main_header {
     a {
         color: @color_one;
-        font-size: 12px;
 
         &:hover {
             color: @hover;
+            text-decoration: none;
         }
     }
 
     #logo {
         font-family: @header_font;
         font-size: 24px;
-
     }
 
     nav {
@@ -19,25 +33,84 @@ header#main_header {
     }
 }
 
-div.timeline {
+div#login {
+    .login_form_container {
+        input[type=text], input[type=password] {
+            font-size: 17px;
+            font-family: @text_font;
+        }
+
+        input[type=submit] {
+            float: right;
+        }
+
+        label {
+            font-size: 12px;
+            font-family: @text_font;
+        }
+    }
+}
+
+div#register {
+    .register_form_container {
+        input[type=text], input[type=password] {
+            font-size: 17px;
+            font-family: @text_font;
+        }
+
+        input[type=submit] {
+            float: right;
+        }
+
+        label {
+            font-size: 12px;
+            font-family: @text_font;
+        }
+    }
+}
+
+.login_redirect, .register_redirect {
+    h1 {
+        a {
+            font-family: @header_font;
+            font-size: 30px;
+            color: @color_two;
+
+            &:hover {
+                color: @hover;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+div.timeline_filter {
     color: @color_two;
     font-size: 12px;
 
-    h2 {
-        font-size: 16px;
-        padding-bottom: 2px;
+    h1 {
+        font-family: @header_font;
+        font-size: 18px;
     }
+}
 
-    a {
-        font-family: @text_font;
+div.timeline {
+    color: @color_two;
 
-        &:hover {
-            text-decoration: underline;
+    h2 {
+        a {
+            font-size: 16px;
         }
+        padding-bottom: 2px;
     }
 
     div {
         font-family: @text_font;
         font-size: 12px;
+    }
+
+    .label {
+        font-family: @header_font;
+        font-size: 25px;
     }
 }

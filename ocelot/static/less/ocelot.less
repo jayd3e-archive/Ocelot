@@ -79,22 +79,153 @@ header#main_header {
     white-space: nowrap;
 }
 
+div#login {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 50px 0px;
+
+    .login_form_container {
+        margin: 0 auto;
+        width: 250px;
+
+        input[type=text], input[type=password] {
+            width: 242px;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+div#register {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 50px 0px;
+
+    .register_form_container {
+        margin: 0 auto;
+        width: 250px;
+
+        input[type=text], input[type=password] {
+            width: 242px;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+div.register_redirect {
+    position: absolute;
+    right: 70px;
+    top: 305px;
+    height: 30;
+
+    .arrow {
+        position: absolute;
+        top: -2px;
+        right: -30px;
+        width: 17px;
+        height: 30px;
+        background-image: url('/static/img/right_arrow.png');
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .arrow {
+            background-position: right;
+        }
+    }
+}
+
+div.login_redirect {
+    position: absolute;
+    left: 70px;
+    top: 305px;
+    height: 30;
+
+    .arrow {
+        position: absolute;
+        top: -2px;
+        left: -30px;
+        width: 17px;
+        height: 30px;
+        background-position: right;
+        background-image: url('/static/img/left_arrow.png');
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .arrow {
+            background-position: left;
+        }
+    }
+}
+
+@filter_height: 30px;
+div.timeline_filter {
+    width: 100%;
+    height: @filter_height;
+    position: fixed;
+    clear: both;
+
+    ul.left_filters {
+        float: left;
+        padding: 10px 15px;
+        
+        h1 {
+            float: left;
+            display: inline; 
+            margin-right: 10px;   
+        }
+
+        li {
+            padding: 3px 5px;
+            float: left;
+        }
+    }
+
+    ul.right_filters {
+        float: right;
+        padding: 10px 15px;
+        
+        h1 {
+            float: right;
+            display: inline; 
+            margin-right: 10px;   
+        }
+
+        li {
+            padding: 3px 5px;
+            float: right;
+        }
+    }
+}
+
 div.timeline {
     background-image: url('/static/img/timeline_bg.png');
     background-repeat: repeat-x;
     background-position: 0 50%;
     display: inline-block;
     min-width: 100%;
+    margin-top: @filter_height;
 
     .top {
-        ul {
+        ul.events {
             height: 180px;
-            padding: 20px 10px;
+            padding: 20px 5px;
 
-            li {
+            li.event_list_item {
                 float: left;
                 margin: 0px 10px;
                 
+                .label {
+                    width: 100px;
+                    height: 180px;
+                }
+
                 .event {
                     width: 240px;
                     height: 180px;
@@ -125,22 +256,73 @@ div.timeline {
                             right: 10px;
                         }
                     }
-                }   
+                }
+                
+                .status, .ghost_post {
+                    width: 240px;
+                    height: 180px;
+                    position: relative;
+                    white-space: normal;
+
+                    .arrow {
+                        width: 29px;
+                        height: 25px;
+                        background-image: url('/static/img/top_arrow.png');
+                        position: absolute;
+                        bottom: -24px;
+                        right: 25px;
+                        z-index: 1;
+                    }
+
+                    .content {
+                        width: 220px;
+                        padding: 10px 10px 10px 10px;
+                        border: 1px solid @color_two;
+                        border-radius: 5px;
+                        position: absolute;
+                        bottom: 0;
+                    }
+
+                    .options {
+                        clear: both;
+                        
+                        ul {
+                            padding: 5px 0px;
+
+                            li{
+                                float: left;
+                                margin-right: 7px;                             
+                            }
+                        }  
+                    }
+                }  
             }   
         }
     }
 
     .bottom {
-        ul {
+        ul.events {
             height: 180px;
-            padding: 20px 10px;
-            // Temp offset
-            margin-left: 50px;
+            padding: 20px 5px;
 
-            li {
+            li.event_list_item {
                 float: left;
                 margin: 0px 10px;
 
+                .label {
+                    height: 180px;
+                    position: relative;
+
+                    .dot {
+                        background-image: url('/static/img/dot.png');
+                        width: 15px;
+                        height: 7px;
+                        position: absolute;
+                        top: -23px;
+                        left:  40%;
+                    }
+                }
+                
                 .event {
                     width: 240px;
                     height: 180px;
@@ -171,7 +353,46 @@ div.timeline {
                             right: 10px;
                         }
                     }
-                }   
+                }
+                
+                .status, .ghost_post {
+                    width: 240px;
+                    height: 180px;
+                    position: relative;
+                    white-space: normal;
+
+                    .arrow {
+                        width: 27px;
+                        height: 24px;
+                        background-image: url('/static/img/bot_arrow.png');
+                        position: absolute;
+                        top: -23px;
+                        left: 25px;
+                        z-index: 1;
+                    }
+
+                    .content {
+                        width: 220px;
+                        padding: 10px 10px 10px 10px;
+                        border: 1px solid @color_two;
+                        border-radius: 5px;
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    .options {
+                        clear: both;
+                        
+                        ul {
+                            padding: 5px 0px;
+
+                            li{
+                                float: left; 
+                                margin-right: 7px;                             
+                            }
+                        }  
+                    }
+                } 
             }   
         }
     }
