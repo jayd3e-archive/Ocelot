@@ -41,7 +41,7 @@
             </li>
         </ul>
     </div>
-    <div id="drag_line">
+    <div id="hw_drag_line">
         <div id="tip">
             Drag HW Down
         </div>
@@ -60,12 +60,6 @@
                             <li class="assignment_container">
                                 <div class="assignment"></div>
                             </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
                         </ul>
                     </li>
                     <li class="group">
@@ -74,80 +68,11 @@
                             <li class="assignment_container">
                                 <div class="assignment"></div>
                             </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
                         </ul>
                     </li>
                     <li class="group">
                         <a href="/abc">Group 1</a>
                         <ul class="assignment_list">
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="group">
-                        <a href="/abc">Group 1</a>
-                        <ul class="assignment_list">
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="group">
-                        <a href="/abc">Group 1</a>
-                        <ul class="assignment_list">
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="group">
-                        <a href="/abc">Group 1</a>
-                        <ul class="assignment_list">
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
-                            <li class="assignment_container">
-                                <div class="assignment"></div>
-                            </li>
                             <li class="assignment_container">
                                 <div class="assignment"></div>
                             </li>

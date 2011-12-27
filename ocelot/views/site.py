@@ -19,3 +19,7 @@ class SiteViews(object):
     @view_config(route_name='agenda_month', renderer='site/agenda_month.mako')
     def agenda_month(self):
         return {}
+
+    @view_config(route_name='groups', renderer='site/groups.mako')
+    def groups(self):
+        return {}

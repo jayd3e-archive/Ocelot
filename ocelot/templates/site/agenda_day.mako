@@ -41,7 +41,7 @@
             </li>
         </ul>
     </div>
-    <div id="drag_line">
+    <div id="hw_drag_line">
         <div id="tip">
             Drag HW Down
         </div>

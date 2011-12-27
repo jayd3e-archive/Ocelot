@@ -455,7 +455,7 @@ div#hw_pool {
     }
 }
 
-div#drag_line {
+div#hw_drag_line {
     width: 100%;
     height: 20px;
     position: fixed;
@@ -470,6 +470,75 @@ div#drag_line {
         margin: 0 auto;
         width: 120px;
         text-align: center;
+    }
+}
+
+div#group_pool {
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    white-space: normal;
+    overflow-y: scroll;
+    background-color: #FFF;
+
+    ul {
+        float: left;
+        padding: 5px 10px;
+
+        li {
+            float: left;
+            margin: 5px 5px;
+
+            .group {
+                width: 125px;
+                height: 45px;
+                border: 1px solid @color_two;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+div#group_drag_line {
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    top: 445px;
+    background-color: #FFF;
+    background-image: url('/static/img/dotted.png');
+    background-repeat: repeat-x;
+    background-position: 0 50%;
+
+    #tip {
+        background-color: #FFF;
+        margin: 0 auto;
+        width: 120px;
+        text-align: center;
+    }
+}
+
+div#group_drop {
+    width: 100%;
+    height: 100px;
+    white-space: normal;
+    background-color: #FFF;
+    padding: 418px 0px 10px 0px;
+
+    ul {
+        float: left;
+        padding: 5px 10px;
+
+        li {
+            float: left;
+            margin: 5px 5px;
+
+            .group {
+                width: 125px;
+                height: 45px;
+                border: 1px solid @color_two;
+                border-radius: 5px;
+            }
+        }
     }
 }
 
