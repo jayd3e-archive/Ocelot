@@ -9,13 +9,11 @@ def main(global_config, **settings):
 
         # Handler roots
         config.add_route("index", "/")
-        config.add_route("login", "/login")
-        config.add_route("logout", "/logout")
-        config.add_route("register", "/register")
-        config.add_route("agenda_day", "/agenda_day")
-        config.add_route("agenda_week", "/agenda_week")
-        config.add_route("agenda_month", "/agenda_month")
+        config.add_route("day", "/day")
+        config.add_route("week", "/week")
+        config.add_route("month", "/month")
         config.add_route("groups", "/groups")
+        config.add_route("tide", "/tide")
 
         # Handler actions
                     
