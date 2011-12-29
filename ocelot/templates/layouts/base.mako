@@ -13,10 +13,12 @@
         <script type="text/javascript" src="/static/js/less.js"></script>
     </head>
     <body>
-        <header id="main_header">
-            ${header.header(here)}
-        </header>
-        <div class="body">
+        <div id="main_header_area">
+            <div id="main_header" class="centered">
+                ${header.header(here)}
+            </div>
+        </div>
+        <div id="body">
             ${self.body()}
         </div>
     </body>

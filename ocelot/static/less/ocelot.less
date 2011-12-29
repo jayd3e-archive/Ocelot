@@ -18,34 +18,46 @@
 *
 */
 
-header#main_header {
-    height: @header_height;
+.centered {
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+div#header_area {
     width: 100%;
-    position: fixed;
-    background-color: @color_two;
+    background-color: @color_two; 
+}
+
+div#header {
+    height: @header_height;
+    width: 980px;
 
     #logo {
         float: left;
         display: block;
-        padding: 10px 5px;
-        margin: 0 10px;
+        margin: 9px 0px 8px 0px;
     }
 
     #main_nav {
         float: left;
 
         ul {
+            padding-left: 10px;
+
             li {
                 float: left;
 
                 a {
                     display: block;
-                    padding: 15px 5px 14px 5px;
+                    margin: 14px 5px 15px 5px;
                 }
             }
 
             li.search {
-                padding: 8px 5px;
+                padding: 7px 5px 8px 5px;
 
                 input {
                     line-height: 16px;
@@ -57,31 +69,35 @@ header#main_header {
 
     #account_nav {
         float: right;
-        margin: 0 10px;
+        margin: 0 0px;
 
         ul {
             li {
                 float: right;
 
                 img {
-                    padding-top: 10px;
+                    margin-top: 9px;
                 }
 
                 a {
                     display: block;
-                    padding: 15px 5px 14px 5px;
+                    margin: 14px 5px 15px 5px;
                 }
             }
         }
     }
 }
 
-.body {
-    /* 
-    * Clearing the timeline causes a 2px top padding above the
-    * timeline in Google Chrome
-    */
-    clear: both;
-    padding-top: @header_height;
-    white-space: nowrap;
+#body {
+    padding-top: 5px;
+}
+
+.timeline {
+    width: 100%;
+    height: 500px;
+}
+
+.timeline_viewport {
+    width: 980px;
+    height: 500px;
 }
